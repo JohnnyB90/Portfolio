@@ -1,131 +1,303 @@
-html{
-    display: flex;
-    max-width: fit-content;
-    max-height: fit-content;
-    background-color: aqua;
-    overflow: hidden;
+html {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: aqua;
 }
-
 
 .top-bar {
-height: 100%;
-width: 100%;
-border-radius: 6px;
-border-width: 4px;
-display: flex;
-margin: 0;
-justify-content: space-between;
-align-items: center;
-border-style:groove;
-border-color:aquamarine;
-background: #1C6EA4;
-background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 44%, #144E75 100%);
-background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 44%, #144E75 100%);
-background: linear-gradient(to right, #1C6EA4 0%, #2388CB 44%, #144E75 100%);
-position: -webkit-sticky;
-position: sticky;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 6px;
+  border-width: 4px;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  border-style: groove;
+  border-color: aquamarine;
+  background: #1c6ea4;
+  background: -moz-linear-gradient(left, #1c6ea4 0%, #2388cb 44%, #144e75 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #2388cb 44%,
+    #144e75 100%
+  );
+  background: linear-gradient(to right, #1c6ea4 0%, #2388cb 44%, #144e75 100%);
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-
 .header {
-    background-image: url("../assets/images/background-frame-geometric-abstract-square-260nw-1807708021.webp");
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: 'Droid Sans', sans-serif;
-    color:aquamarine;
-    padding: 2%;
-    overflow: hidden;
-    text-align: left;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Droid Sans", sans-serif;
+  color: aquamarine;
+  padding: 2%;
+  overflow: hidden;
+  text-align: left;
+}
+
+#header-background {
+  display: flex;
+  align-items: center;
 }
 
 .profile-img {
-width: 70px;
-height: 70px;
+  width: 70px;
+  height: 70px;
 }
-
 
 .nav-top {
-    color: aquamarine;
-    font-size:large;
-    overflow: hidden;
-    text-align: right;
-    padding-right: 3%;
-    
+  color: aquamarine;
+  font-size: large;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 1%;
 }
-
 
 .nav-link {
-    font-size:16px;
-    color:aquamarine;
-    font-family: 'Droid Sans', sans-serif;
-    text-transform:uppercase;
-    text-decoration:none;
-    line-height:34px;
-    text-align: right;
-    letter-spacing:2px;
-    padding:0 20px;
-    overflow: hidden;
-}
-
-#about-subtitle {
-    display: flex;
+  font-size: 16px;
+  color: aquamarine;
+  font-family: "Droid Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 
 .subtitle {
-    background: #1C6EA4;
-    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 3%, #144E75 100%);
-    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 3%, #144E75 100%);
-    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 3%, #144E75 100%);
-    display: flex;
-    flex-basis: 40%;
-    width: 45%;
-    height: 100px; 
-    left: 58.7%;
-    margin: 1;
-    padding: 0;
-    overflow: hidden;
-    border: groove;
-    border-color:aquamarine;
-    border-radius: 6px;
-    border-width: 4px;
-    justify-content: space-between;
+  background: #1c6ea4;
+  background: -moz-linear-gradient(left, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #2388cb 3%,
+    #144e75 100%
+  );
+  background: linear-gradient(to right, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  /*display: flex;
+  flex-basis: 40%;*/
+  max-width: 100%;
+  max-height: fit-content;
+  left: 58.7%;
+  margin: 1;
+  padding: 0;
+  overflow: hidden;
+  border: groove;
+  border-color: aquamarine;
+  border-radius: 6px;
+  border-width: 4px;
+  justify-content: space-between;
 }
 
+.subtitle-header {
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 0 auto;
+  border-style: double;
+  background-color: cornflowerblue;
+  border-color: #144e75;
+  border-width: 6px;
+  max-width: fit-content;
+  margin-top: 1%;
+}
 
 .about-me {
-    background: #1C6EA4;
-    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 3%, #144E75 100%);
-    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 3%, #144E75 100%);
-    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 3%, #144E75 100%);
-    display: flex;
-    flex-basis: 60%;
-    bottom: 103px;
-    margin: 1;
-    max-width: 58.5%;
-    max-height: fit-content;
-    border: groove;
-    border-color:aquamarine;
-    border-width: 4px;
-    border-radius: 6px 6px 6px 6px;
-    justify-content: space-between;
+  background: #1c6ea4;
+  background: -moz-linear-gradient(left, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #2388cb 3%,
+    #144e75 100%
+  );
+  background: linear-gradient(to right, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  /*display: flex;
+  flex-basis: 60%;*/
+  bottom: 103px;
+  margin: 1;
+  max-width: 100%;
+  max-height: fit-content;
+  border: groove;
+  border-color: aquamarine;
+  border-width: 4px;
+  border-radius: 6px 6px 6px 6px;
+  justify-content: space-between;
 }
 
 #about-me-header {
-    text-decoration: underline;
-    font-weight: bold;
-
+  font-family: "Droid Sans", sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 0 auto;
+  background-color: cornflowerblue;
+  border-color: #144e75;
+  border-style: double;
+  border-width: 6px;
+  max-width: fit-content;
+  max-height: fit-content;
+  margin-top: 1%;
 }
 
+.work {
+  background: #1c6ea4;
+  background: -moz-linear-gradient(left, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #2388cb 3%,
+    #144e75 100%
+  );
+  background: linear-gradient(to right, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  border: groove;
+  border-color: aquamarine;
+  border-width: 4px;
+  border-radius: 6px 6px 6px 6px;
+  max-height: fit-content;
+}
+
+#work-header {
+  font-family: "Droid Sans", sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: cornflowerblue;
+  border-color: #144e75;
+  border-style: double;
+  border-width: 6px;
+  padding: 4px;
+  margin: 4px;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+.paragraph {
+  text-align: center;
+  word-spacing: 2px;
+  color: aquamarine;
+}
+
+.contact-me {
+  background-color: #1c6ea4;
+  background: -moz-linear-gradient(left, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #2388cb 3%,
+    #144e75 100%
+  );
+  background: linear-gradient(to right, #1c6ea4 0%, #2388cb 3%, #144e75 100%);
+  border: groove;
+  border-color: aquamarine;
+  border-width: 4px;
+  border-radius: 6px 6px 6px 6px;
+  max-width: 100%;
+  max-height: fit-content;
+}
+
+#contact-me-footer {
+  font-family: "Droid Sans", sans-serif;
+  max-width: fit-content;
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: bold;
+  margin: 0 auto;
+  background-color: cornflowerblue;
+  border-color: #144e75;
+  border-style: double;
+  border-width: 6px;
+  padding: 6px;
+  margin-top: 1%;
+ 
+}
+
+#footer-nav {
+  text-align: center;
+  padding: 6px;
+  word-spacing: 10px;
+}
+
+.bot-nav {
+  color: aquamarine;
+}
+
+ 
+
+
+
+/*Testing out a trick
 
 
 
 
+#testing::before,
+#testing::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+#testing::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+#testing::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
 
-@media screen and (max-width: 670px){
-   #about-subtitle {
+#testing:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+#testing:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+#testing span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#testing:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+ Presentational Styles 
+body {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  line-height: 1.5;
+  height: 100vh;
+  place-items: center;
+}
+
+#testing{
+  text-decoration: none;
+  color: #18272F;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+ Testing out a trick */
+
+@media screen and (max-width: 670px) {
+  #about-subtitle {
     flex-direction: column;
-    
-   }
-
+  }
 }
