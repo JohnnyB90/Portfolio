@@ -6,3 +6,4 @@
 a section to view my prior work, and a bottom nav bar to contact me.
 
 ### This has no installation instructions and should only be used to find information on myself to help answer some questions about employee potential.
+![Portfolio SS](https://user-images.githubusercontent.com/117334322/217043889-8bb0fdfe-b706-4031-b030-91116e53cdf1.png)
