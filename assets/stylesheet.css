@@ -1,12 +1,12 @@
 html {
-	max-width: 100%;
-	max-height: 100%;
+	max-width: fit-content;
+	height: auto;
 	background-color: rgb(146, 85, 41);
 }
 /* Top Header Decoration */
 .top-bar {
-	max-height: 100%;
-	max-width: 100%;
+	height: auto;
+	width: 99.4%;
 	border-radius: 6px;
 	border-width: 6px;
 	display: flex;
@@ -43,8 +43,8 @@ html {
 	color: burlywood;
 }
 .profile-img {
-	width: 200px;
-	height: 150px;
+	width: 30%;
+	height: 5%;
 	border-style: ridge;
 	border-color: #35240f;
 	border-width: 4px;
@@ -72,13 +72,16 @@ html {
 }
 
 /* Subtitle Section */
+.subtitleimg {
+	width: 100%;
+}
 .subtitle {
 	background: #603200;
 	background: -moz-linear-gradient(left, #603200 0%, #190c00 88%, #2b1212 100%);
 	background: -webkit-linear-gradient(left,#603200 0%,#190c00 88%,#2b1212 100%);
 	background: linear-gradient(to right, #603200 0%, #190c00 88%, #2b1212 100%);
-	max-width: 100%;
-	max-height: 40%;
+	width: 99.4%;
+	height: 40%;
 	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
@@ -86,7 +89,6 @@ html {
 	border-color: #35240f;
 	border-radius: 6px;
 	border-width: 6px;
-	justify-content: space-between;
 }
 .subtitle-header {
 	text-decoration: underline;
@@ -98,10 +100,12 @@ html {
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px;
-	max-height: 100%;
-	max-width: 100%;
+	height: auto;
+	width: 99.3%;
 	text-align: center;
 }
+
+
 /* About Me Section */
 .about-me {
 	background: #603200;
@@ -109,14 +113,12 @@ html {
 	background: -webkit-linear-gradient(left,#603200 0%,#190c00 88%,#2b1212 100%);
 	background: linear-gradient(to right, #603200 0%, #190c00 88%, #2b1212 100%);
 	bottom: 103px;
-	margin: 1;
-	max-width: 100%;
-	max-height: fit-content;
+	width: 99.4%;
+	height: auto;
 	border: groove;
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px 6px 6px 6px;
-	justify-content: space-between;
 }
 #about-me-header {
 	font-family: "Droid Sans", sans-serif;
@@ -129,10 +131,12 @@ html {
 	border-style: double;
 	border-width: 6px;
 	border-radius: 6px;
-	max-width: 100%;
-	max-height: fit-content;
+	width: 99.3%;
+	height: auto;
 	text-align: center;
 }
+
+
 
 /* Resume Section */
 .resume {
@@ -150,17 +154,17 @@ html {
 	flex-wrap: wrap;
 }
 .resume #page1 {
-	margin-left: 12%;
+	margin-left: 9.5%;
 }
 .resume #page2 {
 	margin-left: 5%;
 }
 .resume #page3 {
-	margin-left: 32%;
+	margin-left: 31.5%;
 }
 .resume img {
-	max-width: 700px;
-	max-height: 700px;
+	width: 700px;
+	height: 700px;
 }
 #resume-header {
 	font-family: "Droid Sans", sans-serif;
@@ -176,7 +180,7 @@ html {
 	margin: 4px;
 	margin: 0 auto;
 	text-align: center;
-	height: fit-content;
+	height: auto;
 	max-width: 100%;
 }
 
@@ -205,18 +209,24 @@ html {
 	margin: 4px;
 	margin: 0 auto;
 	text-align: center;
-	height: fit-content;
-	max-width: 100%;
+	height: auto;
+	width: 98.9%;
 }
 .work img {
-	min-width: 600px;
-	min-height: 400px;
 	max-height: 400px;
 	max-width: 600px;
+	border: groove;
+	border-color: #35240f;
+	border-width: 6px;
+	border-radius: 6px;
 }
 #position {
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: 3%;
+}
+#position2{
+	margin-left: 3.1%;
 }
 .CSS {
 	position: relative;
@@ -250,6 +260,30 @@ html {
 	color: rgb(85, 55, 17);
 }
 
+.project-header {
+	position: absolute;
+	left: 60px;
+	bottom: 0px;
+}
+
+#mainproject img {
+    height: 115%;
+    width: 115%;
+	border: groove;
+	border-color: #35240f;
+	border-width: 6px;
+	border-radius: 6px;
+}
+
+.studyguide {
+	margin-top: 4%;
+}
+
+.comingsoonimg {
+	margin: 1%;
+	margin-left: 3%
+}
+
 /* Contact Me Section */
 .contact-me {
 	background: #603200;
@@ -260,8 +294,8 @@ html {
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px;
-	max-width: 100%;
-	max-height: fit-content;
+	width: 99.4%;
+	height: auto;
 }
 
 /* Paragraphs */
@@ -313,17 +347,53 @@ html {
 		flex-direction: column;
 	}
 
-  .work img {
-    max-width: 500px;
-    max-height: 500px;
-	flex-direction: column;
-	flex-wrap: wrap;
-  }
+	.resume img{
+		width: 90%;
+		height: auto;
+	}
 
-  .resume img {
-    max-width: 500px;
-    max-height: 500px;
-	flex-direction: column;
-	flex-wrap: wrap;
-  }
+
+	#mainproject img {
+		width: 95%;
+		height: auto;
+		
+	}
+
+	#work-header {
+		width: 96.5%
+	}
+
+	.subtitle-header {
+		width: 97.5%
+	}
+	
+	.resume {
+		width: 99.4%
+	}
+
+	html {
+		margin-right: 1.4%
+	}
+
+	#resume2 {
+		width: 85.5%;
+		margin-left: 4.7%;
+	}
+
+	#resume3 {
+		width: 150%;
+		margin-right: 30%;
+	}
+
+	.javaimg {
+		width: 100%;
+		margin-right: 30%;
+	}
+
 }
+/* 
+fixes: 
+1. min-width on all images is causing the rest of the content to get "smushed" to the left,
+we need to remove those min-width properties 
+
+2. rather than "min-width" / "max-width", try sizing images with percentages */
