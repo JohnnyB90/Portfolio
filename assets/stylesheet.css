@@ -6,7 +6,7 @@ html {
 /* Top Header Decoration */
 .top-bar {
 	height: auto;
-	width: 99.4%;
+	width: 100%;
 	border-radius: 6px;
 	border-width: 6px;
 	display: flex;
@@ -89,6 +89,8 @@ html {
 	border-color: #35240f;
 	border-radius: 6px;
 	border-width: 6px;
+	width: 100%;
+	height: auto;
 }
 .subtitle-header {
 	text-decoration: underline;
@@ -101,7 +103,7 @@ html {
 	border-width: 6px;
 	border-radius: 6px;
 	height: auto;
-	width: 99.3%;
+	width: auto;
 	text-align: center;
 }
 
@@ -119,6 +121,8 @@ html {
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px 6px 6px 6px;
+	width: 100%;
+	height: auto;
 }
 #about-me-header {
 	font-family: "Droid Sans", sans-serif;
@@ -131,8 +135,8 @@ html {
 	border-style: double;
 	border-width: 6px;
 	border-radius: 6px;
-	width: 99.3%;
 	height: auto;
+	width: auto;
 	text-align: center;
 }
 
@@ -148,24 +152,36 @@ html {
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px;
+	width: 100%;
+	height: auto;
+	display: block;
 }
+
+.resume {
+	background: #603200;
+	background: -moz-linear-gradient(left, #603200 0%, #190c00 88%, #2b1212 100%);
+	background: -webkit-linear-gradient(left,#603200 0%,#190c00 88%,#2b1212 100%);
+	background: linear-gradient(to right, #603200 0%, #190c00 88%, #2b1212 100%);
+	border: groove;
+	border-color: #35240f;
+	border-width: 6px;
+	border-radius: 6px;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
 #resume {
-	display: flex;
-	flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
 }
-.resume #page1 {
-	margin-left: 9.5%;
-}
-.resume #page2 {
-	margin-left: 5%;
-}
-.resume #page3 {
-	margin-left: 31.5%;
-}
-.resume img {
-	width: 700px;
-	height: 700px;
-}
+
+.resume
+
+
 #resume-header {
 	font-family: "Droid Sans", sans-serif;
 	color: rgb(226, 191, 145);
@@ -181,7 +197,7 @@ html {
 	margin: 0 auto;
 	text-align: center;
 	height: auto;
-	max-width: 100%;
+	width: auto;
 }
 
 /* proficiency Section */
@@ -194,6 +210,8 @@ html {
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px;
+	width: 100%;
+	height: auto;
 }
 
 
@@ -212,7 +230,8 @@ html {
 	margin: 0 auto;
 	text-align: center;
 	height: auto;
-	width: 98.9%;
+	width: auto;
+	
 }
 .proficiency img {
 	height: 100%;
@@ -220,8 +239,9 @@ html {
 	border: groove;
 	border-color: #35240f;
 	border-width: 6px;
-	border-radius: 6px;
+	border-radius: 6px;	
 }
+
 
 .html, .CSS,.javascript {
 	display: inline-block;
@@ -233,19 +253,19 @@ html {
 
 #css {
 	position: absolute;
-	left: 50px;
+	left: 10px;
 	color: rgb(85, 55, 17);
 }
 
 #javascript {
 	position: absolute;
-	left: 50px;
+	left: 10px;
 	color: rgb(85, 55, 17);
 }
 
 #html {
 	position: absolute;
-	left: 50px;
+	left: 10px;
 	color: rgb(85, 55, 17);
 }
 /* Projects Section */
@@ -259,15 +279,38 @@ html {
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px;
+	white-space: nowrap;
+	overflow-x: hidden;
+	width: 100%;
+	height: auto;
 }
 
 .projects img {
-	height: 100%;
-	width: 65%;
 	border: groove;
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px;
+}
+
+.mainproject, .studyguide,.comingsoon {
+	display: inline-block;
+	position: relative;
+}
+
+#study-guide {
+	width: 25%;
+	margin-left: -51%;
+}
+
+#coming-soon {
+	width: 33%;
+	margin-left: -206.5%;
+}
+
+
+#horiseon-img {
+	width: 30%;
+	margin-left: 5%;
 }
 
 
@@ -287,24 +330,26 @@ html {
 	margin: 0 auto;
 	text-align: center;
 	height: auto;
-	width: 98.9%;
+	width: auto;
 }
 
-.project-header {
+#mediarp-header {
 	position: absolute;
-	left: 60px;
+	left: 7%;
 	bottom: 0px;
 }
 
-.comingsoon, .studyguide, .mainproject {
-	display: inline-block;
-	position: relative;
-	margin-left: 8.1%;
-	width: 25%;
-	height: 25%;
+#mediasg-header {
+	position: absolute;
+	left: -50%;
+	bottom: 0px;
 }
 
-
+#mediap-header {
+	position: absolute;
+	left: -205%;
+	bottom: 0px;
+}
 
 
 
@@ -318,7 +363,7 @@ html {
 	border-color: #35240f;
 	border-width: 6px;
 	border-radius: 6px;
-	width: 99.4%;
+	width: 100%;
 	height: auto;
 }
 
@@ -339,7 +384,8 @@ html {
 #contact-me-footer {
 	font-family: "Droid Sans", sans-serif;
 	color: rgb(226, 191, 145);
-	max-width: 100%;
+	height: auto;
+	width: auto;
 	text-decoration: underline;
 	font-size: larger;
 	font-weight: bold;
@@ -371,17 +417,16 @@ html {
 		flex-direction: column;
 	}
 
-	.resume img{
-		width: 90%;
+	.top-bar {
+		width: 100%;
 		height: auto;
 	}
-
+/* 
 
 	#mainproject img {
 		width: 95%;
 		height: auto;
-		
-	}
+	} */
 
 	#work-header {
 		width: 96.5%
@@ -390,27 +435,25 @@ html {
 	.subtitle-header {
 		width: 97.5%
 	}
+
+	.subtitle {
+		width: 100%;
+	}
+
+	.about-me {
+		width: 100%;
+		height: auto;
+	}
 	
-	.resume {
-		width: 99.4%
+	.resume img {
+		width: 98%;
+		height: auto;
 	}
 
 	html {
 		margin-right: 1.4%
 	}
-	#resume {
-		display: inline-block
-	}
-	#resume2 {
-		width: 85.5%;
-		margin-left: 4.7%;
-	}
 
-	#resume3 {
-		width: 100%;
-		margin-right: 30%;
-		overflow: auto;
-	}
 
 	.javaimg {
 		display: flex;
@@ -423,11 +466,53 @@ html {
 	}
 	
 	#about-me-header {
-		width: 98.3%;
+		width: 97.4%;
 	}
 
 	h1 {
 		font-size: small;
+	}
+	.proficiency {
+		width: 100%
+	}
+
+	#proficiency-header {
+		width: 96.2%;
+	}
+	.projects {
+		width: 100%;
+	}
+	.resume {
+		width: 100%;
+		height: auto;
+	}
+
+	#mainprojects-header {
+		width: 96.2%
+	}
+
+
+	#study-guide #coming-soon #horiseon-img {
+		width: 100%;
+		position: relative;
+	}
+
+	#mediarp-header {
+		position: absolute;
+		
+	}
+
+	#mediasg-header {
+		position:absolute
+	}
+
+	#mediarp-header {
+		position:absolute
+	}
+
+	.contact-me {
+		width: 100%;
+		height: 100%;
 	}
 
 }
