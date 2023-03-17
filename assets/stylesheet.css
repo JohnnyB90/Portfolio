@@ -316,8 +316,8 @@ html {
 .project-image span{ /*CSS for enlarged image*/
 	position: absolute;
 	display: block; 
-	left: -1000px;
-	visibility: hidden;
+	/* left: -1000px; */
+	/* visibility: hidden; */
 	color: red;
 	text-decoration: none;
 }
