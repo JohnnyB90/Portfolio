@@ -299,18 +299,33 @@ html {
 
 #study-guide {
 	width: 25%;
-	margin-left: -51%;
+	margin-left: -38.5%;
 }
 
 #coming-soon {
-	width: 33%;
-	margin-left: -206.5%;
+	width: 140%;
+	margin-left: -370%;
+}
+
+.project-image:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+  }
+
+.project-image span{ /*CSS for enlarged image*/
+	position: absolute;
+	display: block; 
+	left: -1000px;
+	visibility: hidden;
+	color: red;
+	text-decoration: none;
 }
 
 
 #horiseon-img {
 	width: 40%;
-	margin-left: .5%;
+	margin-left: 5%;
 }
 
 
@@ -341,13 +356,13 @@ html {
 
 #mediasg-header {
 	position: absolute;
-	left: -50%;
+	left: -38%;
 	bottom: 0px;
 }
 
 #mediap-header {
 	position: absolute;
-	left: -205%;
+	left: -368%;
 	bottom: 0px;
 }
 
@@ -409,116 +424,3 @@ html {
 	color: rgb(206, 190, 169);
 }
 
-
-/*Media Queries*/
-@media screen and (max-width: 670px) {
-	body {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.top-bar {
-		width: 100%;
-		height: auto;
-	}
-/* 
-
-	#mainproject img {
-		width: 95%;
-		height: auto;
-	} */
-
-	#work-header {
-		width: 96.5%
-	}
-
-	.subtitle-header {
-		width: 97.5%
-	}
-
-	.subtitle {
-		width: 100%;
-	}
-
-	.about-me {
-		width: 100%;
-		height: auto;
-	}
-	
-	.resume img {
-		width: 98%;
-		height: auto;
-	}
-
-	html {
-		margin-right: 1.4%
-	}
-
-
-	.javaimg {
-		display: flex;
-		width: 100%;
-		margin-right: 30%;
-	}
-
-	.work {
-		width: 99.4%;
-	}
-	
-	#about-me-header {
-		width: 97.4%;
-	}
-
-	h1 {
-		font-size: small;
-	}
-	.proficiency {
-		width: 100%
-	}
-
-	#proficiency-header {
-		width: 96.2%;
-	}
-	.projects {
-		width: 100%;
-	}
-	.resume {
-		width: 100%;
-		height: auto;
-	}
-
-	#mainprojects-header {
-		width: 96.2%
-	}
-
-
-	#study-guide #coming-soon #horiseon-img {
-		width: 100%;
-		position: relative;
-	}
-
-	#mediarp-header {
-		position: absolute;
-		
-	}
-
-	#mediasg-header {
-		position:absolute
-	}
-
-	#mediarp-header {
-		position:absolute
-	}
-
-	.contact-me {
-		width: 100%;
-		height: 100%;
-	}
-
-}
-/* 
-fixes: 
-1. min-width on all images is causing the rest of the content to get "smushed" to the left,
-we need to remove those min-width properties 
-
-2. rather than "min-width" / "max-width", try sizing images with percentages */
